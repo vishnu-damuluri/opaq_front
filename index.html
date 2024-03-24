@@ -11,11 +11,17 @@
       tailwind.config = {
         theme: {
           extend: {
+        screens: {
+        'phone': { min: '360px', max: '640px' },
+        'ipad': { min: '768px', max: '1024px' },
+        'pc': { min: '1280px', max: '7680px' }
+         },
             colors: {
               clifford: '#da373d',
             }
           }
         }
+        
       }
     </script>
     <style type="text/tailwindcss">
@@ -166,7 +172,7 @@ body {
           <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
         </div>
       </div>
-      <section>
+      <section class="bg-white">
         <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8 bg-white">
           <div class="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
             <div class="relative z-10 lg:py-16">
@@ -179,9 +185,9 @@ body {
               </div>
             </div>
       
-            <div class="relative flex items-center bg-gray-100">
+            <div class="relative flex items-center bg-white w-full ">
               <span
-                class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100"
+                class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-20 lg:bg-white"
               ></span>
       
               <div class="p-8 sm:p-16 lg:p-24">
@@ -591,10 +597,7 @@ body {
             </div>
           </div>
         </div>
-      </footer>
-
-     
-      
-              
+      </footer>            
 </body>
 </html>
+ 
